@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 
 const projects = [
   { title: "Enterprise ERP Portal", category: "Web App", image: "bg-blue-900" },
@@ -13,6 +14,11 @@ const projects = [
 const Portfolio = () => {
   return (
     <div className="pt-32 pb-24 min-h-screen">
+      <SEO 
+        title="Our Portfolio | HADYRA TECHNOLOGIES" 
+        description="A showcase of our most impactful digital projects including Restaurant Billing Apps, ERP Dashboards, and AI Chatbots."
+        keywords="Business software company, enterprise IT solutions, portfolio, Chennai software company"
+      />
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <motion.h1 

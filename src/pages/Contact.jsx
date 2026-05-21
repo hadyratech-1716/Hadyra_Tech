@@ -1,10 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Phone, ArrowRight } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const Contact = () => {
   return (
     <div className="pt-32 pb-24 min-h-screen">
+      <SEO 
+        title="Contact Us | HADYRA TECHNOLOGIES" 
+        description="Ready to transform your business? Contact Hadyra Technologies in Chennai or Qatar to schedule a consultation with our technology experts."
+        keywords="contact IT company, software company Chennai contact, Qatar tech company support"
+      />
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="text-center mb-20">

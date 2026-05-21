@@ -8,10 +8,10 @@ const Footer = () => {
     <footer id="contact" className="bg-[#020813] pt-24 pb-12 border-t border-white/5 relative overflow-hidden">
       {/* Decorative gradient */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-brand-blue to-transparent opacity-30"></div>
-      
+
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          
+
           <div className="lg:col-span-1">
             <div className="mb-8 origin-left transform scale-90">
               <Link to="/">
@@ -61,15 +61,16 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-brand-gray text-sm">
                 <MapPin className="w-5 h-5 text-brand-blue shrink-0" />
-                <span>Chennai, India <br/> Doha, Qatar</span>
+                <span>Chennai, India <br /> Doha, Qatar</span>
               </li>
               <li className="flex items-center gap-3 text-brand-gray text-sm">
                 <Mail className="w-5 h-5 text-brand-blue shrink-0" />
-                <a href="mailto:hello@hadyra.com" className="hover:text-white transition-colors">hello@hadyra.com</a>
+                <a href="mailto:hello@hadyra.com" className="hover:text-white transition-colors">hadyratech@gmail.com</a>
               </li>
               <li className="flex items-center gap-3 text-brand-gray text-sm">
                 <Phone className="w-5 h-5 text-brand-blue shrink-0" />
-                <span>+91 98765 43210</span>
+                <span>+91 93451 54161</span>
+                <span>+974 517 0099</span>
               </li>
             </ul>
           </div>

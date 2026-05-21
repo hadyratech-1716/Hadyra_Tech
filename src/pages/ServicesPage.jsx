@@ -1,10 +1,16 @@
 import React from 'react';
 import Services from '../components/Services';
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 
 const ServicesPage = () => {
   return (
     <div className="pt-32 pb-20 min-h-screen">
+      <SEO 
+        title="Our Services | HADYRA TECHNOLOGIES" 
+        description="Explore our premium services including Web Development, Mobile App Development, AI Automation, and ERP Solutions in Chennai and Qatar."
+        keywords="Web development company Chennai, Mobile app development Qatar, AI automation services, ERP software solutions"
+      />
       <div className="max-w-7xl mx-auto px-6 mb-16 text-center">
         <motion.h1 
           initial={{ opacity: 0, y: -20 }}
