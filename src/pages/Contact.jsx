@@ -9,8 +9,7 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
+    name: '',
     email: '',
     message: ''
   });
@@ -28,21 +27,22 @@ const Contact = () => {
     
     try {
       await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_EMAILJS_SERVICE_ID || "service_lgiiode",
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "template_8elj0nl",
         {
-          from_name: `${formData.firstName} ${formData.lastName}`.trim(),
+          from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
         },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "xxEIBSZ-MgQSULA59"
+        }
       );
 
       setSubmitted(true);
       toast.success("Message sent successfully!");
       setFormData({
-        firstName: '',
-        lastName: '',
+        name: '',
         email: '',
         message: ''
       });
@@ -156,15 +156,9 @@ const Contact = () => {
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-brand-gray">First Name</label>
-                    <input name="firstName" value={formData.firstName} onChange={handleChange} required type="text" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-blue transition-colors" placeholder="John" />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-brand-gray">Last Name</label>
-                    <input name="lastName" value={formData.lastName} onChange={handleChange} required type="text" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-blue transition-colors" placeholder="Doe" />
-                  </div>
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-brand-gray">Full Name</label>
+                  <input name="name" value={formData.name} onChange={handleChange} required type="text" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-blue transition-colors" placeholder="John Doe" />
                 </div>
                 
                 <div className="space-y-2">
