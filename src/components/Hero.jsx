@@ -40,7 +40,7 @@ const Hero = () => {
         >
           <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-brand-gray text-sm font-medium mb-6 backdrop-blur-md">
             <span className="w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
-            Chennai & Qatar Based Tech Enterprise
+            Chennai & Gulf Based Tech Enterprise
           </motion.div>
 
           <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl font-bold font-display leading-[1.1] mb-6">
