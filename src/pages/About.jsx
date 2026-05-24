@@ -8,8 +8,8 @@ const About = () => {
     <div className="pt-32 pb-24 min-h-screen">
       <SEO 
         title="About Us | HADYRA TECHNOLOGIES" 
-        description="HADYRA TECHNOLOGIES is a premium software engineering firm in Chennai and Qatar. We build scalable digital solutions for modern enterprises."
-        keywords="Chennai software company, Qatar IT company, software engineering firm, digital transformation"
+        description="HADYRA TECHNOLOGIES is a premium software engineering firm in Chennai. We build scalable digital solutions for modern enterprises."
+        keywords="Chennai software company, Business digitalization, software engineering firm, digital transformation"
       />
       <div className="max-w-7xl mx-auto px-6">
         
@@ -28,7 +28,7 @@ const About = () => {
             transition={{ delay: 0.1 }}
             className="text-brand-gray text-lg max-w-3xl mx-auto leading-relaxed"
           >
-            HADYRA TECHNOLOGIES is a premium software engineering firm operating in Chennai, India and Doha, Qatar. We specialize in building scalable, secure, and beautiful digital solutions for modern enterprises.
+            HADYRA TECHNOLOGIES is a premium software engineering firm operating in Chennai, India. We specialize in building scalable, secure, and beautiful digital solutions for modern enterprises.
           </motion.p>
         </div>
 

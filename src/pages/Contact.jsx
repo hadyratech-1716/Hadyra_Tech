@@ -50,7 +50,6 @@ const Contact = () => {
                   <div>
                     <h4 className="text-white font-semibold text-lg">Office Locations</h4>
                     <p className="text-brand-gray mt-1">Chennai, Tamil Nadu, India</p>
-                    <p className="text-brand-gray">Doha, Qatar</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -59,7 +58,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold text-lg">Email Us</h4>
-                    <p className="text-brand-gray mt-1">hello@hadyratech.com</p>
+                    <p className="text-brand-gray mt-1">hadyratech@gmail.com</p>
                     <p className="text-brand-gray">support@hadyratech.com</p>
                   </div>
                 </div>
@@ -69,8 +68,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold text-lg">Call Us</h4>
-                    <p className="text-brand-gray mt-1">+91 98765 43210 (India)</p>
-                    <p className="text-brand-gray">+974 1234 5678 (Qatar)</p>
+                    <p className="text-brand-gray mt-1">+91 93451 54161 (India)</p>
                   </div>
                 </div>
               </div>
