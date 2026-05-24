@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-24 overflow-hidden bg-grid-pattern">
       {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-blue/20 rounded-full blur-[120px] pointer-events-none animate-blob"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-blue/20 rounded-full blur-[100px] pointer-events-none" style={{ willChange: 'transform' }}></div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10 w-full grid lg:grid-cols-2 gap-12 items-center">
 
@@ -112,7 +112,7 @@ const Hero = () => {
           </motion.div>
 
           {/* Center Main Orb */}
-          <div className="relative w-72 h-72 rounded-full bg-gradient-to-br from-brand-blue/40 to-cyan-400/40 blur-sm flex items-center justify-center border border-white/20 backdrop-blur-3xl shadow-[0_0_100px_rgba(99,102,241,0.3)]">
+          <div className="relative w-72 h-72 rounded-full bg-gradient-to-br from-brand-blue/40 to-cyan-400/40 flex items-center justify-center border border-white/20 shadow-[0_0_80px_rgba(99,102,241,0.3)]">
             <div className="w-48 h-48 rounded-full bg-brand-dark border border-white/10 flex items-center justify-center relative overflow-hidden">
               <div className="absolute inset-0 bg-grid-pattern opacity-50"></div>
               <Cpu className="w-16 h-16 text-white/80 relative z-10" />
