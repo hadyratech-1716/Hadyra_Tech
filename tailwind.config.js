@@ -8,17 +8,18 @@ export default {
     extend: {
       colors: {
         brand: {
-          navy: '#071B3B',
-          blue: '#0A6CFF',
-          gray: '#9EA7B3',
-          white: '#FFFFFF',
-          dark: '#030D1E',
-          accent: '#112954'
+          navy: '#0a0a0a',
+          blue: '#6366f1',
+          gray: '#a1a1aa', // zinc-400
+          white: '#f5f5f5',
+          dark: '#0a0a0a',
+          card: '#111111',
+          accent: '#4f46e5'
         }
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Outfit', 'system-ui', 'sans-serif'],
+        display: ['Clash Display', 'Inter', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -26,6 +27,7 @@ export default {
       animation: {
         'blob': 'blob 7s infinite',
         'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+        'float': 'float 6s ease-in-out infinite',
       },
       keyframes: {
         blob: {
@@ -37,6 +39,10 @@ export default {
         fadeInUp: {
           '0%': { opacity: 0, transform: 'translateY(20px)' },
           '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
         }
       }
     },
