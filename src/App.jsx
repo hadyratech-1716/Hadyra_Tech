@@ -7,6 +7,9 @@ import ServicesPage from './pages/ServicesPage';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import BillingSoftwareChennai from './pages/BillingSoftwareChennai';
+import WebDevelopmentTamilNadu from './pages/WebDevelopmentTamilNadu';
+import AIAutomationIndia from './pages/AIAutomationIndia';
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/billing-software-in-chennai" element={<BillingSoftwareChennai />} />
+            <Route path="/website-development-in-tamil-nadu" element={<WebDevelopmentTamilNadu />} />
+            <Route path="/ai-automation-services-india" element={<AIAutomationIndia />} />
           </Routes>
         </main>
 
